@@ -5,9 +5,8 @@ Posting here for future reference for anybody concerned
 
 `Made with Love™ ❤️`
 
-`by Karthik Nair`
+`by Karthik Nair` <br>
 
-`http://instagr.am/harry_kris`
-
-`http://twitter.com/RealKarthikNair`
+[instagram ](https://www.instagram.com/harry_kris_) <br>
+[twitter](https://www.twitter.com/realkarthiknair)
 
