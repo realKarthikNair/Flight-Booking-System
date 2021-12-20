@@ -1,7 +1,9 @@
 # Flight-Booking-System
-A console based simple flight booking system i made as my high-school group project
+## A console based simple flight booking system i made as my high-school group project
 
-Posting here for future reference for anybody concerned
+*The main motive for sharing this repo publicly is to help out python+mysql beginners in whatever ways possible* <br>
+**That said, it doesn't mean i encourage plagiarism, though anything is upto you and all rights are explicitly granted in the License.**
+
 
 `Made with Love™ ❤️`
 
