@@ -7,7 +7,7 @@ name = " not logged in "
 
 def connect_to_database():
     global server, flight_booking
-    server = sql.connect(host='localhost', user='root', auth_plugin='mysql_native_password', passwd='123456')  # connecting with sql
+    server = sql.connect(host='localhost', user=f'{username}', auth_plugin='mysql_native_password', passwd=f'{password}')  # connecting with sql
     flight_booking = server.cursor()
     try:
         flight_booking.execute("use flight_booking;")  # use database if exists
