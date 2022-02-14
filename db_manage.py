@@ -1,11 +1,22 @@
 # backend code to assist main.py and thus manage MySQL database
 import mysql.connector as sql
+from itertools import islice
 from tabulate_module import tabulate
 import random
 
 name = " not logged in "
 
-def connect_to_database():
+def setup_sql():
+    try:
+        with open("sql_creds.txt") as data:
+            creds = list(islice(data, 2))
+            return [creds[0].strip("\n"), creds[1].strip("\n")]
+    except:
+        
+
+
+
+def connect_to_database(username, password):
     global server, flight_booking
     server = sql.connect(host='localhost', user=f'{username}', auth_plugin='mysql_native_password', passwd=f'{password}')  # connecting with sql
     flight_booking = server.cursor()
