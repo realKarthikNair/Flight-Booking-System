@@ -12,6 +12,7 @@ def setup_sql():
             creds = list(islice(data, 2))
             return [creds[0].strip("\n"), creds[1].strip("\n")]
     except:
+        # take username and password from user
         
 
 
