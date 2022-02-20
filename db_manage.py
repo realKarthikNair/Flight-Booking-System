@@ -12,9 +12,26 @@ def setup_sql():
             creds = list(islice(data, 2))
             return [creds[0].strip("\n"), creds[1].strip("\n")]
     except:
-        # take username and password from user
-        
-
+        print("This is a one time setup !\n")
+        uname=input("Enter MySQL username: ")
+        pwd=input("Enter MySQL password: ")
+        creds= [uname, pwd]
+        try:
+            connect_to_database(creds[0], creds[1])
+            with open("sql_creds.txt", "w") as data:
+                data.write(uname+"\n")
+                data.write(pwd+"\n")
+                return [uname, pwd]
+        except:
+            print("Either Entered credentials are invalid or MySQL isn't running/working with python")
+            choice= input("start Over again? [y/n]: ")
+            if choice.lower()=="y":
+                return setup_sql()
+                # there was a bug=> if wrong values are entered 
+                # and then right credentials are entered on next recursion, exception occurs
+                # now fixed
+            else:
+                return 0
 
 
 def connect_to_database(username, password):

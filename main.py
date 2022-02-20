@@ -3,7 +3,10 @@ from db_manage import *
 running_status = False
 
 try:
-    connect_to_database()
+    creds=setup_sql()
+    if creds==0:
+        raise Exception
+    connect_to_database(creds[0], creds[1])
     user_info()
     running_status = True
     print('Welcome to CRK Flight Booking System ', end="\n\n")
@@ -27,7 +30,7 @@ email=start_up()
 options = {"chart": "for seeing flight chart", "book": "to book flights", "bookings": "to see bookings and ticket cancellation",
            "account": "to view/edit account info and logout . "}
 
-while True:
+while True and running_status==True:
     print()
     for i in options.keys():
         print(f"    enter {i} {options[i]} ")
