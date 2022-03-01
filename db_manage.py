@@ -1,6 +1,8 @@
 # backend code to assist main.py and thus manage MySQL database
 import mysql.connector as sql
 from itertools import islice
+# I included the official tabulate module locally with the name tabulate_module.py
+# However, using the latest version after installing tabulate via pip is recommended
 from tabulate_module import tabulate
 import random
 
