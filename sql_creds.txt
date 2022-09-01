@@ -1,2 +1,1 @@
-root
-123456
+#This text file would store MySQL username and password credentials
