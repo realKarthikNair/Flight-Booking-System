@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from db_manage import *
 
 running_status = False
