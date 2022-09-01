@@ -1,1 +1,2 @@
-#This text file would store MySQL username and password credentials
+root
+123456
