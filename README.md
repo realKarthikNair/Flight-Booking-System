@@ -13,3 +13,6 @@ Although this project is no longer actively maintained for obvious reasons, i wo
 [instagram ](https://www.instagram.com/karthiknair.sh) <br>
 [twitter](https://www.twitter.com/realkarthiknair)
 
+### Incase you want to buy me a coffee...
+
+<a slign="left" href="https://coindrop.to/realkarthiknair" target="_blank"><img align="left" src="https://coindrop.to/embed-button.png" style="border-radius: 10px; height: 57px !important;width: 229px !important;" alt="Coindrop.to me"></img></a>
